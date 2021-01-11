@@ -23,7 +23,7 @@
  The app is built using [Node](https://nodejs.org/en/), [MySQL](https://www.npmjs.com/package/mysql/) and a homemade ORM to query and route data, and Handlebars to generate HTML. 
 
  <p align="center">
-    <img alt="Screenshot of Eat-Da-Burger" src="https://github.com/caymanh/burger/blob/main/public/assets/img/app-screenshot.jpg">
+    <img alt="Screenshot of Eat-Da-Burger" src="https://github.com/caymanh/burger/blob/main/public/assets/img/app-screenshot.JPG">
     
 </p>
 
