@@ -61,7 +61,7 @@ const orm = {
     queryString += printQuestionMarks(vals.length);
     queryString += ") ";
 
-    console.log(queryString);
+    // console.log(queryString);
 
     connection.query(queryString, vals, (err, result) => {
       if (err) {
@@ -79,7 +79,7 @@ const orm = {
     queryString += " WHERE ";
     queryString += condition;
 
-    console.log(queryString);
+    // console.log(queryString);
     connection.query(queryString, (err, result) => {
       if (err) {
         throw err;

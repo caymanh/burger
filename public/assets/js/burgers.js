@@ -54,6 +54,8 @@ document.addEventListener("DOMContentLoaded", (event) => {
         burger_name: document.getElementById("ca").value.trim(),
       };
 
+      console.log(newBurger);
+
       // Send POST request to create a new quote
       fetch("/api/burgers", {
         method: "POST",

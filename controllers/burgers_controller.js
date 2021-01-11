@@ -11,13 +11,12 @@ router.get('/', (req, res) => {
       const hbsObject = {
         burgers: data,
       };
-      console.log('hbsObject', hbsObject);
       res.render('index', hbsObject);
     });
   });
   
   router.post('/api/burgers', (req, res) => {
-    burger.insertOne(['burger_name', 'devoured'], [req.body.name], (result) => {
+    burger.insertOne(['burger_name'], [req.body.burger_name], (result) => {
       // Send back the ID of the new quote
       res.json({ id: result.insertId });
     });
@@ -26,7 +25,7 @@ router.get('/', (req, res) => {
   router.put('/api/burgers/:id', (req, res) => {
     const condition = `id = ${req.params.id}`;
   
-    console.log('devoured', condition);
+    // console.log('devoured', condition);
   
     burger.updateOne(
       {
